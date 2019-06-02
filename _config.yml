@@ -3,9 +3,9 @@
 #
 
 # Name of your site (displayed in the header)
-name: 韩松传
+name: LOFFER
 # Short bio or description (displayed in the header)
-description: 一个穿越架空坑
+description: 一个可以fork的博客
 
 #
 # Flags below are optional
@@ -25,8 +25,8 @@ navigation:
     url: /about
   - name: 归档
     url: /archive
- # - name: 标签
- #   url: /tags
+  - name: 标签
+    url: /tags
 
 # Pagination
 paginate: 8
@@ -38,23 +38,22 @@ footer-links:
   email: 
   facebook:
   flickr:
-  github: # FromEndWorld/fromendworld.github.io
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  github: FromEndWorld/loffer
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
-  twitter: # frommidworld
+  twitter: # <your_twitter_username> 
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: Copyright (c) 2019 沉锋
+footer-text: Copyright (c) 2019 来自中世界
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: hansongzhuan
+disqus: #shortname
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -67,7 +66,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: /Hansongzhuan
+baseurl: /loffer
 
 #
 # !! You don't need to change any of the configuration flags below !!
