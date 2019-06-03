@@ -423,7 +423,31 @@ nav {
 
 .posts{
   margin: 40px;
+
+  .tag {
+    display: inline;
+    font-weight: 300;
+    font-size: $small-font-size;
+
+    li:before {
+      content: '';
+    }
+
+    li {
+      display: inline;
+      margin: 0;
+
+      > a {
+        margin: 3px 3px 3px 0;
+        padding: .5px 4px;
+        color: $tag-index-label-color;
+        background-color: $tag-index-label-background-color;
+        border-radius: 3px;
+      }
+    }
+  }
 }
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
@@ -432,30 +456,6 @@ nav {
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
-}
-
-
-.tag {
-  display: inline;
-  font-weight: 300;
-  font-size: $small-font-size;
-
-  li:before {
-    content: '';
-  }
-
-  li {
-    display: inline;
-    margin: 0;
-
-    > a {
-      margin: 3px 3px 3px 0;
-      padding: .5px 4px;
-      color: $tag-index-label-color;
-      background-color: $tag-index-label-background-color;
-      border-radius: 3px;
-    }
-  }
 }
 
 .post {
@@ -470,6 +470,8 @@ nav {
     color: $base-lighten-color;
     margin-right: 3px;
   }
+
+
 
   .comments {
     margin-top: 10px;
