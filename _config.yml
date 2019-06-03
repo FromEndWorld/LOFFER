@@ -12,10 +12,10 @@ description: 一个可以fork的博客
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/FromEndWorld/loffer/master/images/logo.png
+avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
 
 # URL of your favicon
-favicon: https://raw.githubusercontent.com/FromEndWorld/loffer/master/images/favicon.png
+favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
 
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
