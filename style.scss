@@ -8,6 +8,7 @@
 @import "reset";
 @import "open-color";
 @import "variables";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -21,7 +22,7 @@ html {
 body {
   font-family: $base-font;
   color: $base-color;
-  line-height: 1.6;
+  line-height: 1.7em;
 }
 
 .container {
@@ -32,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.7;
+  line-height: 2em;
   margin: 1em 0 16px;
   padding: 0;
 
@@ -71,7 +72,7 @@ h6 {
 
 p {
   color: $text-color;
-  margin: 15px 0;
+  margin: 1em 0;
 }
 
 a {
