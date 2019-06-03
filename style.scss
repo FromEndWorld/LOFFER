@@ -332,31 +332,33 @@ img {
     text-align: center;
   }
 }
-
-.site-avatar {
-  margin:300px auto 0;
-  max-width: 240px;
-  max-height: 240px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 2px;
-  }
-}
-
 .site-info {
   text-align:center;
-  margin: 0 auto;
+  margin: 100px auto 0;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+  }
+
+  .site-avatar {
+    margin:0 auto;
+    max-width: 200px;
+    max-height: 200px;
+
+    @include mobile {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    img {
+      display: inline-block;
+      border-radius: 2px;
+      max-width: 240px;
+      max-height: 240px;
+    }
   }
 }
 
@@ -380,22 +382,24 @@ img {
   }
 }
 
+.navlist{
+  text-align:center;
+}
+
 nav {
-  float: none;
+  display: block;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $base-font;
   font-weight: 500;
   font-size: 18px;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
-    display: block;
     font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
+    margin: 0 10px;
     color: $oc-gray-8;
     text-align: right;
     font-weight: 300;
@@ -554,11 +558,23 @@ nav {
   }
 }
 
+// content
+
+.wrapper-content {
+  float: right;
+  width: 70%;
+  padding: 0 40px;
+}
+
 // Footer
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid $footer-border-color;
   background-color: $footer-background-color;
+  position: absolute;
+  clear:both;
+  widows:100%;
+  bottom:0;
 }
 
 footer {
