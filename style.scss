@@ -412,7 +412,18 @@ nav {
   }
 }
 
+// content
+
+.wrapper-content {
+  float: right;
+  width: 70%;
+}
+
 // Posts
+
+.posts{
+  margin: 40px;
+}
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
@@ -424,6 +435,7 @@ nav {
 }
 
 .post {
+
   h1 {
     margin-bottom: .1em;
   }
@@ -468,8 +480,9 @@ nav {
 }
 
 .pagination {
+  border-top: 1px solid $divider-color;
   font-weight: 300;
-  padding: 2em 0;
+  padding: 40px;
   width: 100%;
   display: inline-block;
 
@@ -482,8 +495,13 @@ nav {
     width: 50%;
     a {
       color: $pagination-color;
+      border: 1px solid $divider-color;
+      padding: 10px 20px;
+      background: $oc-gray-0;
+
       &:hover, &:focus {
         color: $pagination-over-color;
+        border: 1px solid $link-color;
       }
     }
   }
@@ -494,8 +512,13 @@ nav {
     width: 50%;
     a {
       color: $pagination-color;
+      border: 1px solid $divider-color;
+      padding: 10px 20px;
+      background: $oc-gray-0;
+
       &:hover, &:focus {
         color: $pagination-over-color;
+        border: 1px solid $link-color;
       }
     }
   }
@@ -558,13 +581,7 @@ nav {
   }
 }
 
-// content
 
-.wrapper-content {
-  float: right;
-  width: 70%;
-  padding: 0 40px;
-}
 
 // Footer
 .wrapper-footer {
