@@ -109,4 +109,4 @@ exclude:
   - README.md
   - CNAME
 
-excerpt_separator: <!--more-->
+excerpt_separator: ---
