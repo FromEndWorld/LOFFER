@@ -34,6 +34,7 @@ paginate: 8
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中
 footer-links:
+  weibo: frommidworld
   behance: # https://www.behance.net/<username>
   dribbble:
   email: 
