@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Markdown reference
+title: Markdown reference from Typora
 date: 2019-06-03
 Author: 
 categories: 
-tags: 
+tags: [sample, markdown]
 comments: true
 ---
 
