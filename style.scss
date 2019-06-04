@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.6em;
   }
 }
 
@@ -458,19 +458,19 @@ nav {
   border-bottom: none;
 }
 
+.date {
+  font-weight: 300;
+  font-size: $small-font-size;
+  color: $base-lighten-color;
+  margin-right: 4px;
+}
+
+
 .post {
 
   h1 {
     margin-bottom: .1em;
   }
-
-  .date {
-    font-weight: 300;
-    font-size: $small-font-size;
-    color: $base-lighten-color;
-    margin-right: 3px;
-  }
-
 
 
   .comments {
@@ -591,7 +591,7 @@ nav {
 
 
 // Footer
-.wrapper-footer {
+.wrapper-footer-desktop {
   margin-top: 50px;
   border-top: 1px solid $footer-border-color;
   background-color: $footer-background-color;
@@ -599,6 +599,22 @@ nav {
   clear:both;
   width:100%;
   bottom:0;
+  
+  @include mobile {
+    display: none;
+  }
+
+}
+
+.wrapper-footer-mobile {
+  display: none;
+  
+  @include mobile {
+    display: bolck;
+    margin-top: 50px;
+    border-top: 1px solid $footer-border-color;
+    background-color: $footer-background-color;
+  }
 }
 
 footer {
