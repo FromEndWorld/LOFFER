@@ -322,7 +322,16 @@ img {
 	left:0;
 	position: fixed;
 	z-index: 4;
-	border-right: 1px solid $divider-color;
+  border-right: 1px solid $divider-color;
+
+  @include mobile {
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+    position: relative;
+    border-bottom: 1px solid $divider-color;
+    border-right: 0;
+  }
 }
 
 .sidebar {
@@ -344,20 +353,18 @@ img {
 
   .site-avatar {
     margin:0 auto;
-    max-width: 200px;
-    max-height: 200px;
+    display: block;
+    max-width: 240px;
+    max-height: 240px;
 
     @include mobile {
-      float: none;
-      display: block;
-      margin: 0 auto;
+      max-width: 120px;
+      max-height: 120px;
     }
 
     img {
       display: inline-block;
       border-radius: 2px;
-      max-width: 240px;
-      max-height: 240px;
     }
   }
 }
@@ -417,6 +424,11 @@ nav {
 .wrapper-content {
   float: right;
   width: 70%;
+
+  @include mobile {
+    float: none;
+    width: 100%;
+  }
 }
 
 // Posts
@@ -508,7 +520,7 @@ nav {
 
       &:hover, &:focus {
         color: $pagination-over-color;
-        border: 1px solid $link-color;
+        border: 1px solid $oc-teal-4;
       }
     }
   }
@@ -611,7 +623,7 @@ nav {
   
   @include mobile {
     display: bolck;
-    margin-top: 50px;
+    width: 100%;
     border-top: 1px solid $footer-border-color;
     background-color: $footer-background-color;
   }
