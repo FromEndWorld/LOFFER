@@ -529,7 +529,7 @@ nav {
 
       &:hover, &:focus {
         color: $pagination-over-color;
-        border: 1px solid $oc-teal-4;
+        border: 1px solid $oc-teal-3;
       }
     }
   }
@@ -546,7 +546,7 @@ nav {
 
       &:hover, &:focus {
         color: $pagination-over-color;
-        border: 1px solid $link-color;
+        border: 1px solid $oc-teal-3;
       }
     }
   }
@@ -631,7 +631,7 @@ nav {
   display: none;
   
   @include mobile {
-    display: bolck;
+    display: block;
     width: 100%;
     border-top: 1px solid $footer-border-color;
     background-color: $footer-background-color;
