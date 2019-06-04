@@ -436,6 +436,10 @@ nav {
 .posts{
   margin: 40px;
 
+  @include mobile {
+    margin: 24px;
+  }
+
   .tag {
     display: inline;
     font-weight: 300;
@@ -496,6 +500,10 @@ nav {
 
 .page {
   margin: 40px;
+
+  @include mobile {
+    margin: 24px;
+  }
 }
 
 .pagination {
@@ -507,6 +515,7 @@ nav {
 
   @include mobile {
     font-size: $small-font-size;
+    padding: 24px;
   }
 
   > .prev {
