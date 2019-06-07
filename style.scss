@@ -506,6 +506,10 @@ nav {
   }
 }
 
+.entry {
+  max-width: 800px;
+} 
+
 .pagination {
   border-top: 1px solid $divider-color;
   font-weight: 300;
