@@ -6,6 +6,18 @@ LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很�
 
 以下我会尽量用人话解说如何使用这个……LOFFER。
 
+## 注意
+
+LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有任何问题的。 **但是:**
+
+- **请勿发布成人向内容** 
+- **不要将大量图片上传到GitHub**
+
+如有疑问，请阅读[GitHub Pages官方说明](https://pages.github.com/)。
+
+另外，同人作品更好的发布平台是[AO3](https://archiveofourown.org/)，你想你发在AO3还有tag还有kudos还有人看，是吧？
+
+
 ## 如何使用
 
 首先，这个博客主题适应手机阅读，但是，要使用它建立你自己的博客，你需要上电脑操作。
@@ -39,6 +51,8 @@ LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很�
 在你的博客的GitHub代码库页面里，选择Code，文件列表里选择_config.yml，点击打开，点击右上角笔形图标修改文档。
 
 修改完成后，点击“Commit changes”。每次修改过代码库并且commit后，GitHub Pages都会自动重新发布网站，只要等上几分钟，再次刷新你的博客页面，就会看到你的修改了。
+
+还有一点，**LOFFER使用的是MIT协议，大意就是全部开源随意使用，如果你要保留自己博文的权利，请编辑LICENSE文件，写上类似“_posts中的文档作者保留权利”这样的内容。**
 
 ### 第三步 发布博文
 
