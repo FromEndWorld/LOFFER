@@ -4,9 +4,11 @@ LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很�
 
 **LOFFER已更新到V0.2.0版本**
 
-新版本进一步优化了一下样式，并且支持了基于GitHub Issues的评论Gitalk。比Disqus好看多了！！！
+新版本进一步优化了一下样式，并且支持了基于GitHub Issues的评论Gitalk（请看下文的配置说明）。
 
-如果你已经fork了LOFFER，想要更新到新版本的话
+如果你已经fork了LOFFER，想要更新到新版本的话，可以试试[这个方法](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser)，或者你也可以干脆删掉重来，只要保留自己的大部分config设定和所有的post就好。
+
+LOFFER只是容器，你的posts才是博客的核心。
 
 
 ## 注意
