@@ -1,0 +1,21 @@
+{% if site.gitalk %}
+<div class="comments">
+    <div id="gitalk-container"></div>
+    <script>
+        const gitalk = new Gitalk({
+          clientID: "{{ site.gitalk.clientID }}",
+          clientSecret: "{{ site.gitalk.clientSecret }}",
+          repo: "{{ site.gitalk.repo }}",
+          owner: "{{ site.gitalk.owner }}",
+          admin: ["{{ site.gitalk.owner }}"],
+          id: window.location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false,  // Facebook-like distraction free mode
+          title: "{{ page.title }}",
+          language: "zh-CN",
+
+        })
+        
+        gitalk.render('gitalk-container')
+    </script>
+</div>
+{% endif %}

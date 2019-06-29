@@ -30,10 +30,18 @@ $small-font-size: 14px;
 // Colors
 $base-color: $oc-gray-8;
 $base-lighten-color: $oc-gray-6;
+$base-lightener-color: $oc-gray-4;
+
+$background-color: $oc-gray-0;
+$background-lighten-color: #f8f9fa6b;
 
 $text-color: $base-color;
 $link-color: $oc-teal-8;
+$link-lighten-color: $oc-teal-6;
+$link-bghv-color: $oc-teal-0;
 $divider-color: $oc-gray-1;
+
+$error-color:$oc-red-8;
 
 $table-border-color: $oc-gray-2;
 $table-background-color: $oc-gray-1;
@@ -44,15 +52,11 @@ $blockquote-border-color: $oc-gray-3;
 $footnote-link-border-color: $oc-gray-1;
 $footnote-link-background-over-color: $oc-gray-1;
 
-$selection-color: $oc-black;
-$selection-background-color: $oc-gray-1;
+// $selection-color: $oc-black;
+$selection-background-color: $oc-gray-3;
 
-$pagination-color: $oc-gray-6;
-$pagination-over-color: $oc-gray-8;
-
-$tag-index-label-color: $base-color;
 $tag-index-label-background-color: $oc-gray-2;
-$tag-index-count-background-color: $oc-gray-3;
+$tag-index-count-background-color: #868e961a;
 
 $footer-border-color: $oc-gray-2;
 $footer-background-color: $oc-gray-0;

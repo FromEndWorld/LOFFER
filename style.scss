@@ -27,8 +27,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
-  padding: 0 16px;
+  max-width: 1000px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -76,11 +76,17 @@ p {
 }
 
 a {
-  color: $oc-teal-8;
+  color: $link-color;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
   &:hover, &:active {
-    color: $oc-teal-7;
+    color: $link-lighten-color;
   }
 }
 
@@ -270,11 +276,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $selection-color;
+//  color: $selection-color;
   background: $selection-background-color;
 }
 ::selection {
-  color: $selection-color;
+//  color: $selection-color;
   background: $selection-background-color;
 }
 
@@ -316,7 +322,7 @@ img {
   width: 30%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-color: $oc-gray-0;
+	background-color: $background-color;
 	height: 100%;
 	top: 0;
 	left:0;
@@ -341,6 +347,7 @@ img {
     text-align: center;
   }
 }
+
 .site-info {
   text-align:center;
   margin: 100px auto 0;
@@ -354,8 +361,8 @@ img {
   .site-avatar {
     margin:0 auto;
     display: block;
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 200px;
+    max-height: 200px;
 
     @include mobile {
       max-width: 120px;
@@ -371,7 +378,7 @@ img {
 
 .site-name {
   margin: 0 auto;
-  color: $oc-gray-9;
+  color: $base-color;
   cursor: pointer;
   font-family: $base-font;
   font-weight: 700;
@@ -381,7 +388,7 @@ img {
 
 .site-description {
   margin: 15px auto;
-  color: $oc-gray-7;
+  color: $base-lighten-color;
   font-size: 16px;
 
   @include mobile {
@@ -407,14 +414,13 @@ nav {
 
   a {
     margin: 0 10px;
-    color: $oc-gray-8;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $oc-teal-8;
+      color: $link-color;
     }
   }
 }
@@ -434,11 +440,6 @@ nav {
 // Posts
 
 .posts{
-  margin: 40px;
-
-  @include mobile {
-    margin: 24px;
-  }
 
   .tag {
     display: inline;
@@ -456,9 +457,14 @@ nav {
       > a {
         margin: 3px 3px 3px 0;
         padding: .5px 4px;
-        color: $tag-index-label-color;
+        color: $base-color;
         background-color: $tag-index-label-background-color;
         border-radius: 3px;
+
+        &:hover {
+          color: $link-color;
+          background-color:$link-bghv-color;
+        }
       }
     }
   }
@@ -499,41 +505,39 @@ nav {
 }
 
 .page {
-  margin: 40px;
+//  margin: 40px;
 
   @include mobile {
-    margin: 24px;
+//    margin: 24px;
   }
 }
 
-.entry {
-  max-width: 1000px;
-} 
 
 .pagination {
   border-top: 1px solid $divider-color;
   font-weight: 300;
-  padding: 40px;
+  padding: 40px 0;
   width: 100%;
   display: inline-block;
 
   @include mobile {
     font-size: $small-font-size;
-    padding: 24px;
+    padding: 24px 0;
   }
 
   > .prev {
     float: left;
     width: 50%;
     a {
-      color: $pagination-color;
+      color: $base-lighten-color;
       border: 1px solid $divider-color;
       padding: 10px 20px;
-      background: $oc-gray-0;
+      background: $background-color;
 
       &:hover, &:focus {
-        color: $pagination-over-color;
-        border: 1px solid $oc-teal-3;
+        color: $link-lighten-color;
+        border: 1px solid $link-lighten-color;
+        background-color: $link-bghv-color;
       }
     }
   }
@@ -543,14 +547,15 @@ nav {
     text-align: right;
     width: 50%;
     a {
-      color: $pagination-color;
+      color: $base-lighten-color;
       border: 1px solid $divider-color;
       padding: 10px 20px;
-      background: $oc-gray-0;
+      background: $background-color;
 
       &:hover, &:focus {
-        color: $pagination-over-color;
-        border: 1px solid $oc-teal-3;
+        color: $link-lighten-color;
+        border: 1px solid $link-lighten-color;
+        background-color: $link-bghv-color;
       }
     }
   }
@@ -584,9 +589,13 @@ nav {
     > a {
       display: inline-block;
       margin: 1px;
-      color: $tag-index-label-color;
+      color: $base-color;
       background-color: $tag-index-label-background-color;
       border-radius: 3px;
+
+      &:hover {
+        background-color: $link-bghv-color;
+      }
 
       span {
         float: left;
@@ -595,6 +604,7 @@ nav {
         &.count {
           background-color: $tag-index-count-background-color;
           border-radius: 0 3px 3px 0;
+
         }
       }
     }
@@ -666,6 +676,11 @@ footer {
     svg {
       height: 20px;
       width: 20px;
+      fill: $base-lighten-color;
+      
+      &:hover {
+        fill: $link-lighten-color;
+      }
     }
 
     em {
@@ -685,3 +700,6 @@ footer {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
+@import "gitalk";
+
+

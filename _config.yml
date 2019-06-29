@@ -34,6 +34,9 @@ navigation:
 # 每页的文章数
 paginate: 8
 
+# 文章简介的区分标记
+excerpt_separator: <!-- more -->
+
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
 footer-links: 
   weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
@@ -55,8 +58,17 @@ footer-links:
 # 站点页脚的文字
 footer-text: Copyright (c) 2019 来自中世界
 
-# 输入Disqus shortname，即可添加评论区，细节可阅读文档。
+# 评论，注意，请不要同时添加多种不同的评论区
+
+# 输入Disqus shortname，即可添加评论区
 disqus: loffer #shortname
+
+# 输入Gitalk相关设定，即可添加评论区
+gitalk:
+  clientID: 
+  clientSecret: 
+  repo: 
+  owner: 
 
 # 输入Google Analytics web tracking code
 google_analytics:
@@ -108,4 +120,3 @@ exclude:
   - README.md
   - CNAME
 
-excerpt_separator: ---
