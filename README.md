@@ -2,9 +2,12 @@ LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很�
 
 这是一个可以通过Fork直接发布在GitHub的Jekyll博客，你不需要编写代码或使用命令行即可获得一个部署在GitHub的博客。
 
-当你看到不认识的术语，请忽略它，我知道程序员不说人话，我都不是程序员但是我已经开始意识到这是因为我们不知道这些概念用人话怎么说。
+**LOFFER已更新到V0.2.0版本**
 
-以下我会尽量用人话解说如何使用这个……LOFFER。
+新版本进一步优化了一下样式，并且支持了基于GitHub Issues的评论Gitalk。比Disqus好看多了！！！
+
+如果你已经fork了LOFFER，想要更新到新版本的话
+
 
 ## 注意
 
@@ -90,6 +93,8 @@ LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有�
 
 ### 可选：添加评论区
 
+#### Disqus
+
 LOFFER支持Disqus评论，虽然Disqus很丑，但是它是免费的，设置起来又方便，因此大家也就不要嫌弃它。
 
 首先，注册一个[Disqus](https://disqus.com/)账户，我们可以选择这个免费方案：
@@ -111,6 +116,28 @@ LOFFER支持Disqus评论，虽然Disqus很丑，但是它是免费的，设置�
 ![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Disqus-3.png)
 
 然后需要回到你的博客，修改_config.yml文件，在disqus字段填上你的shortname，commit，完成！
+
+#### Gitalk
+
+新增内容，LOFFER 0.2.0版本支持Gitalk评论区（在LOFFER示例站中仍然是Disqus，可以在[我的博客](https://himring.top/gitalk/)查看Gitalk的demo），设置方法如下：
+
+首先，创建一个[OAuth application](https://github.com/settings/applications/new), 设置如图：
+
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/application_settings.png)
+
+点Register后就会看到你所需要的两个值，clientID和clientSecret，把它们复制到你的_config.yml文件中相应的字段：
+
+    gitalk:
+      clientID: <你的clientID>
+      clientSecret: <你的clientSecret>
+      repo: <你的repository名称>
+      owner: <你的GitHub用户名>
+
+然后commit，你的Gitalk评论区就会出现了。对于每一篇文章，都需要你来进入文章页，来初始化评论区，这一操作会在你的repository上创建一个Issue，此后的评论就是对这个Issue的回复。
+
+你可以进入你的repository的Issue页面，点**Unsubscribe**来避免收到大量相关右键。
+
+注意：出于很明显的原因，最好不要同时添加Disqus和Gitalk评论区。
 
 ### 导入LOFTER的内容
 
