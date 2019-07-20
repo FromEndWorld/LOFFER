@@ -6,17 +6,18 @@ Author: Shengbin
 categories: 
 tags: [sample, markdown]
 comments: true
+toc: true
 ---
 
 本中文版Markdown语法简介来自博客 <https://blog.shengbin.me/posts/markdown-syntax>
 
 Markdown语法的完整介绍在这里：<http://daringfireball.net/projects/markdown/syntax>。下面整理的这些为了方便写博客时参考。
 
-### 分段与分行
+## 分段与分行
 
 以一个或多个空行来隔开段落；以两个或多个空格来段内换行。
 
-### 标题
+## 标题
 
 ```
 This is an H1
@@ -33,7 +34,7 @@ This is an H2
 
 ```
 
-### 引用
+## 引用
 
 在每一行前面写一个`>`：
 
@@ -65,7 +66,7 @@ id sem consectetuer libero luctus adipiscing.
 
 ```
 
-### 多重引用
+## 多重引用
 
 ```
 > This is the first level of quoting.
@@ -84,7 +85,7 @@ id sem consectetuer libero luctus adipiscing.
 >
 > Back to the first level.
 
-### 列表
+## 列表
 
 列表项占一行，以*、+、-开头即可：
 
@@ -132,7 +133,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 -   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 -   Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.
 
-### 代码块
+## 代码块
 
 每一行前面缩进四个或以上个空格，就认为是开始了一段代码块。代码块内原样输出。
 
@@ -152,7 +153,7 @@ This is a code block.
 
 ```
 
-### 横线
+## 横线
 
 三个或更多个`*`、`-`（它们之间可以有空格）会产生横线：
 
@@ -165,7 +166,7 @@ This is a code block.
 
 * * * * *
 
-### 链接
+## 链接
 
 内嵌链接：
 
@@ -208,7 +209,7 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 
 [http://www.shengbin.me](http://www.shengbin.me/)
 
-### 强调
+## 强调
 
 单个`*`或`_`产生斜体，两个（`**`、`__`）则产生粗体。例如：
 
@@ -225,7 +226,7 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 
 **like** **this**
 
-### 内嵌代码
+## 内嵌代码
 
 ```
 code: `echo hello`
@@ -236,11 +237,11 @@ code: `echo hello`
 
 code: `echo hello`
 
-### 图片
+## 图片
 
 图片与链接类似，只需在文本前面加上感叹号`!`即可。图片位置和大小无法通过Markdown来指定。
 
-### 转义字符
+## 转义字符
 
 以下特殊字符需要用`\`转义得到。
 
