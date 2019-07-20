@@ -2,6 +2,21 @@ LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很�
 
 这是一个可以通过Fork直接发布在GitHub的Jekyll博客，你不需要编写代码或使用命令行即可获得一个部署在GitHub的博客。
 
+**LOFFER已更新到V0.3.0版本**
+
+新版本增加目录功能，在post的信息中心加入`toc: true`，这篇博文就会显示目录了。
+
+这次没有对config的修改，因此应该可以通过[这个方法](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser)，给自己提pull request来更新。
+
+目录基于[jekyll-toc by allejo](https://github.com/allejo/jekyll-toc)制作。
+
+目前我试用发现了一点小问题：如果你的标题级数不按套路变化，它就会搞不懂…… 
+
+`# 一级标题`下面必须是`## 二级标题`，如果是`### 三级标题`它就人工智障了【手动扶额】
+
+注意：目前目录仅在桌面版显示。
+
+
 **LOFFER已更新到V0.2.0版本**
 
 新版本进一步优化了一下样式，并且支持了基于GitHub Issues的评论Gitalk（请看下文的配置说明）。
