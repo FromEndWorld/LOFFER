@@ -81,9 +81,6 @@ url:
 # 那么就写成 "/repository-name"
 baseurl: /LOFFER
 
-# 选择主题色，可选 red, pink, grape, violet, indigo, blue, cyan, teal, green, lime, yellow
-# 颜色使用opencolor https://yeun.github.io/open-color/
-themecolor: teal
 
 #
 # !! 以下所有设置都不需要更改 !!
