@@ -41,7 +41,7 @@ layout: default
   {% endfor %}
   
   {% for post in paginator.posts %}
-    {% unless pinned %}
+    {% unless post.pinned %}
     <article class="post">
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
