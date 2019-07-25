@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<script src="https://unpkg.com/feather-icons"></script>
 
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
@@ -11,6 +12,7 @@ layout: default
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
     <article class="post pinned">
+      <i data-feather="anchor"></i>
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h1>
@@ -29,6 +31,10 @@ layout: default
           </li>
           {% endfor %}
         </ul>
+
+        <script>
+          feather.replace()
+        </script>
       </div>
 
       <div class="entry">
