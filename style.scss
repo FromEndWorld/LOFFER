@@ -480,6 +480,14 @@ nav {
   border-bottom: none;
 }
 
+
+.pinned .feather-anchor {
+  color: $base-lighten-color;
+  padding: 2px;
+  margin-right: 8px;
+}
+
+
 .date {
   font-weight: 300;
   font-size: $small-font-size;

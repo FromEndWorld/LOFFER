@@ -12,9 +12,8 @@ layout: default
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
     <article class="post pinned">
-      <i data-feather="anchor"></i>
       <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h1>
 
       <div clsss="meta">
