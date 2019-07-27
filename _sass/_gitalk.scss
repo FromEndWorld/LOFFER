@@ -204,6 +204,7 @@
   .markdown-body pre {
     padding: 16px;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     font-size: 85%;
     line-height: 1.45;
     background-color: #f6f8fa;
@@ -700,6 +701,7 @@
     border-radius: 5px;
     border: 1px solid $divider-color;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
   
