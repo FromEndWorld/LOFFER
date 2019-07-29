@@ -35,11 +35,11 @@ navigation:
 paginate: 8
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
-footer-links: 
+footer-links:
   weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
-  email: fromendworld@outlook.com 
+  email: fromendworld@outlook.com
   facebook: #https://www.facebook.com/<>
   flickr: #https://www.flickr.com/<>
   github: FromEndWorld/loffer #https://github.com/<>
@@ -49,20 +49,20 @@ footer-links:
   rss: #随便填点啥RSS就能用了
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
-  twitter: # https://www.twitter.com/<your_twitter_username> 
+  twitter: # https://www.twitter.com/<your_twitter_username>
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
 footer-text: Copyright (c) 2019 清溪 / subtank
 
 # 输入Disqus shortname，即可添加评论区，细节可阅读文档。
-disqus: loffer #shortname
+#disqus: loffer #shortname
 
 # 输入Google Analytics web tracking code
 google_analytics:
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
-url: 
+url:
 
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
