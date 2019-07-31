@@ -180,6 +180,7 @@ dt {
   float: left;
   width: $dt-width;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   clear: left;
   text-align: right;
   white-space: nowrap;
