@@ -5,9 +5,9 @@
 # 你的博客名称，请用你想要的博客名替换“LOFFER”，以下修改都可类似处理
 # 注意，“name: LOFFER”，冒号后面的空格不可以省略。
 # 井号后面的文字是说明文档，不会被程序读取。
-name: LOFFER
+name: Lovainc
 # 描述/签名
-description: 一个可以fork的博客
+description: 芥子的博客
 
 #
 # 下面的设定都是可选的
