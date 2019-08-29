@@ -7,7 +7,7 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 名称：许迪淳
 ＃描述/签名
-description: 一个可以fork的博客
+description: 一个三次元迷的的博客
 
 #
 # 下面的设定都是可选的
@@ -39,21 +39,13 @@ excerpt_separator: <!-- more -->
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
 footer-links: 
-  weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
-  behance: # https://www.behance.net/<>
-  dribbble: # https://dribbble.com/<>
-  email: fromendworld@outlook.com 
-  facebook: #https://www.facebook.com/<>
-  flickr: #https://www.flickr.com/<>
-  github: FromEndWorld/loffer #https://github.com/<>
-  instagram: #https://instagram.com/<>
-  linkedin: #https://www.linkedin.com/in/<>
-  pinterest: #https://www.pinterest.com/<>
+  weibo: https://weibo.com/xudichun #请输入你的微博个性域名 https://www.weibo.com/<thispart>
+
+  email: didi1727043732@icloud.com 
+  github: https://github.com/XuDichun #https://github.com/<>
+  instagram: https://www.instagram.com/xdc_06/ #https://instagram.com/<>
+
   rss: #随便填点啥RSS就能用了
-  stackoverflow: # http://stackoverflow.com/<>
-  tumblr: # https://<username>.tumblr.com
-  twitter: # https://www.twitter.com/<your_twitter_username> 
-  youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
 footer-text: Copyright (c) 2019 来自中世界
@@ -61,25 +53,19 @@ footer-text: Copyright (c) 2019 来自中世界
 # 评论，注意，请不要同时添加多种不同的评论区
 
 # 输入Disqus shortname，即可添加评论区
-disqus: loffer #shortname
-
-# 输入Gitalk相关设定，即可添加评论区
-gitalk:
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
+disqus: dchun #shortname
 
 # 输入Google Analytics web tracking code
-google_analytics:
+#google_analytics:
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
-url: 
+url: http://dichun.top
+
 
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /LOFFER
+baseurl: /dchun
 
 
 #
