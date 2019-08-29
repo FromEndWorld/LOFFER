@@ -38,7 +38,7 @@ paginate: 8
 excerpt_separator: <!-- more -->
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
-footer-links: 
+#footer-links: 
   weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
@@ -56,7 +56,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2019 来自中世界
+footer-text: Copyright (c) 2019 来自火星
 
 # 评论，注意，请不要同时添加多种不同的评论区
 
