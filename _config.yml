@@ -14,10 +14,10 @@ description: 一个三次元迷的的博客
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+#avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+#favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
 
 
 # 菜单中的按钮
@@ -45,10 +45,10 @@ footer-links:
   github: https://github.com/XuDichun #https://github.com/<>
   instagram: https://www.instagram.com/xdc_06/ #https://instagram.com/<>
 
-  rss: #随便填点啥RSS就能用了
+  #rss: #随便填点啥RSS就能用了
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2019 来自中世界
+footer-text: XuDichun (c) 2019 来自Anti Plagiarism Club
 
 # 评论，注意，请不要同时添加多种不同的评论区
 
