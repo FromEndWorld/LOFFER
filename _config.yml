@@ -7,14 +7,14 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 name: NEVER
 # 描述/签名
-description: love in mind
+description: Love In Mind
 
 #
 # 下面的设定都是可选的
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: http://pwzb0zceh.bkt.clouddn.com/xsj/x.png
+avatar: http://pwzb0zceh.bkt.clouddn.com/xsj/txm.png
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
 favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
