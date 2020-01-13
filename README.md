@@ -47,6 +47,7 @@ LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有�
 
 - **请勿发布成人向内容** 
 - **不要将大量图片上传到GitHub**
+- **不要用我的Discus账户，请配置你自己的，本文档中有教程**
 
 如有疑问，请阅读[GitHub Pages官方说明](https://pages.github.com/)。
 
