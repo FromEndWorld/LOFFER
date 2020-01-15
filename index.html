@@ -9,7 +9,7 @@ layout: default
 
 <div class="posts">
   
-  {% for post in paginator.posts %}
+  <!-- {% for post in paginator.posts %} -->
   {% if post.pinned==true %}
     <article class="post pinned">
       <h1>
@@ -48,7 +48,7 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
     {% endif %}
-  {% endfor %}
+  <!-- {% endfor %} -->
   
   {% for post in paginator.posts %}
     {% unless post.pinned %}
