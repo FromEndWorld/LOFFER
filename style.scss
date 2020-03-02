@@ -537,6 +537,7 @@ nav {
   position: fixed;
   z-index: 4;
   padding: 60px 20px 0 20px;
+  overflow-y: auto;
   
   &:before{
     content:"目录";
