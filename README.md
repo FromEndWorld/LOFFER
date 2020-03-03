@@ -58,21 +58,27 @@ LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有�
 
 首先，这个博客主题适应手机阅读，但是，要使用它建立你自己的博客，你需要上电脑操作。
 
-### 第一步 Fork到你的GitHub
+### 第一步 使用这个template
 
-请点击[GitHub](https://github.com/)，注册一个GitHub账户。我们可以理解Git就是个文件版本管理系统，本身并不需要会代码即可使用。
+请点击[GitHub](https://github.com/)，注册一个GitHub账户。
 
-现在你看到的LOFFER，是作为一个GitHub上的Repository（代码库）存在的，你可以把这个代码库复制到你自己的GitHub账户中，这个操作叫做Fork。
+现在你看到的LOFFER，是作为一个GitHub上的Repository（代码库）存在的，我将之设为可以作为template（模板），你可以用这个template来生成一份自己的loffer。
 
-点击[LOFFER](https://github.com/FromEndWorld/LOFFER)，进入LOFFER的GitHub Repository页面，然后点Fork：
+点击[LOFFER](https://github.com/FromEndWorld/LOFFER)，进入LOFFER的GitHub Repository页面，然后点Use this template：
 
-![gif](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/fork.gif)
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/usetemplate.png)
 
-然后你立刻就可以看到LOFFER再次出现，这次它已经属于你了，这里我建议你重命名它，点击settings，给你的博客起个名字（请尽量使用字母而非中文）。
+然后给你的博客起个名字，这里只能用字母和少数特殊字符，没有关系，这个名称并不影响你的博客页面显示。
 
-![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/rename.png)
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/nameyourbolg.png)
 
-然后，向下拉页面，你会看到“GitHub Pages”，这是GitHub内置的网站host服务，选择master，如图所示：
+点击Create repository from template，很快就会看到这样一个页面，GitHub已经将LOFFER中所有的文件复制到你的新代码库中。
+
+下一步，点击Settings，进入相关设置。
+
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Settings.png)
+
+向下拉页面，你会看到“GitHub Pages”，这是GitHub内置的网站host服务，选择master，如图所示：
 
 ![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/pages.png)
 
@@ -80,15 +86,17 @@ LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有�
 
 ![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/published.png)
 
-你可能会看到网站长得很丑，请继续下一步.
+你可能会看到网站长得很丑，这是因为样式表尚未从正确的地址加载，没关系，请继续下一步。
 
 ### 第二步 设置站点信息
 
 在你的博客的GitHub代码库页面里，选择Code，文件列表里选择_config.yml，点击打开，点击右上角笔形图标修改文档。
 
-修改完成后，点击“Commit changes”。每次修改过代码库并且commit后，GitHub Pages都会自动重新发布网站，只要等上几分钟，再次刷新你的博客页面，就会看到你的修改了。
+关于如何修改站点信息，在文件内有文档说明。
 
-还有一点，**LOFFER使用的是MIT协议，大意就是全部开源随意使用，如果你要保留自己博文的权利，请编辑LICENSE文件，写上类似“_posts中的文档作者保留权利”这样的内容。**
+修改完成后，点击“Commit changes”。每次修改过代码库并且commit后，GitHub Pages都会自动重新发布网站，只要等上几分钟，再次刷新你的博客页面，就会看到你的修改了。这一修改完成后，你的博客站应该可以正常显示了。
+
+还有一点，**LOFFER使用的是MIT协议，大意就是全部开源随意使用，如果你要保留自己博文的权利，请编辑LICENSE文件，写上类似“博文作者保留权利”这样的内容。**
 
 ### 第三步 发布博文
 
@@ -112,7 +120,7 @@ LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有�
     comments: true
     --- 
 
-完成后，保存为.md文件，文件名是date-标题，例如 2019-06-02-document.md (注意这里的标题会成为这个post的URL，所以推荐使用字母而非中文，它不影响页面上显示的标题)，然后上传到_posts文件夹，commit，很快就可以在博客上看到新文章了。
+完成后，保存为.md文件，文件名是date-标题，例如 2019-06-02-document.md (注意这里的标题会成为这个post的URL，所以请使用字母而非中文，它不影响页面上显示的标题)，然后上传到_posts文件夹，commit，很快就可以在博客上看到新文章了。
 
 ### 可选：图片怎么办？
 
@@ -178,7 +186,7 @@ LOFFER支持Disqus评论，虽然Disqus很丑，但是它是免费的，设置�
 
 诸位可以使用[墨问非名太太的脚本](http://underdream.lofter.com/post/38ea7d_1c5d8a983)，其中选择Jekyll输出即可。
 
-我个人也在折腾一个脚本，目前还没有完全debug清楚，不管如何，请先在lofter里导出一下，存在本地也是好的，贴吧可以让2017以前所有内容全部消失，中国互联网，没什么不可能发生的。
+也可以使用我修改的脚本[lofter2Jekyll](https://github.com/FromEndWorld/lofter2Jekyll)，其效果相似，还可以将图片批量下载到本地。
 
 ## 致谢
 
