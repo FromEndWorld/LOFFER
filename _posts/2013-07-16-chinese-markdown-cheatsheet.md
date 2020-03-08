@@ -8,9 +8,9 @@ comments: true
 toc: true
 ---
 
-本中文版Markdown语法简介来自博客 <https://blog.shengbin.me/posts/markdown-syntax>
+本中文版Markdown语法简介来自博客 <https://blog.shengbin.me/posts/markdown-syntax>，并由我完成了汉化。其中的站位文字来自[狗屁不通文章生成器](https://suulnnka.github.io/BullshitGenerator/index.html)。
 
-Markdown语法的完整介绍在这里：<http://daringfireball.net/projects/markdown/syntax>。下面整理的这些为了方便写博客时参考。
+[Markdown语法的完整文档在这里](http://daringfireball.net/projects/markdown/syntax)。下面整理的这些为了方便写博客时参考。
 
 ## 分段与分行
 
@@ -19,17 +19,17 @@ Markdown语法的完整介绍在这里：<http://daringfireball.net/projects/mar
 ## 标题
 
 ```
-This is an H1
+这是一级标题
 =============
 
-This is an H2
+这是二级标题
 -------------
 
-# This is an H1
+# 一级标题
 
-##  This is an H2
+##  二级标题
 
-######  This is an H6
+######  六级标题
 
 ```
 
@@ -38,119 +38,112 @@ This is an H2
 在每一行前面写一个`>`：
 
 ```
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> 这是一个引用段落。
+> 一般来讲，我们都必须务必慎重的考虑考虑。 了解清楚标记语言到底是一种怎么样的存在，是解决一切问题的关键。 
+> 一般来说， 莎士比亚曾经说过，抛弃时间的人，时间也抛弃他。这似乎解答了我的疑惑。 
 >
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-> id sem consectetuer libero luctus adipiscing.
+> 笛卡儿曾经提到过，读一切好书，就是和许多高尚的人谈话。带着这句话，我们还要更加慎重的审视这个问题： 
+> 现在，解决标记语言的问题，是非常非常重要的。 
 
 ```
 
 效果：
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> 这是一个引用段落。
+> 一般来讲，我们都必须务必慎重的考虑考虑。 了解清楚标记语言到底是一种怎么样的存在，是解决一切问题的关键。 
+> 一般来说， 莎士比亚曾经说过，抛弃时间的人，时间也抛弃他。这似乎解答了我的疑惑。 
 >
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.
+> 笛卡儿曾经提到过，读一切好书，就是和许多高尚的人谈话。带着这句话，我们还要更加慎重的审视这个问题： 
+> 现在，解决标记语言的问题，是非常非常重要的。 
 
 或者在每一段前面写一个`>`：
 
 ```
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> 这是一个引用段落。一般来讲，我们都必须务必慎重的考虑考虑。 了解清楚标记语言到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 莎士比亚曾经说过，抛弃时间的人，时间也抛弃他。这似乎解答了我的疑惑。
 
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-
+> 笛卡儿曾经提到过，读一切好书，就是和许多高尚的人谈话。带着这句话，我们还要更加慎重的审视这个问题： 现在，解决标记语言的问题，是非常非常重要的。 
 ```
 
 ## 多重引用
 
 ```
-> This is the first level of quoting.
+> 这是第一层引用
 >
-> > This is nested blockquote.
+> > 这是第二层引用
 >
-> Back to the first level.
+> 回到第一层
 
 ```
 
 效果：
 
-> This is the first level of quoting.
+> 这是第一层引用
 >
-> > This is nested blockquote.
+> > 这是第二层引用
 >
-> Back to the first level.
+> 回到第一层
 
 ## 列表
 
 列表项占一行，以*、+、-开头即可：
 
 ```
-*   Red
-*   Green
-*   Blue
+*   甲子
+*   乙丑
+*   丙寅
 
 ```
 
 效果：
 
--   Red
--   Green
--   Blue
+*   甲子
+*   乙丑
+*   丙寅
 
 有序列表只需要将上述标记符换成数字加句点。而且顺序由书写顺序决定，与数字无关，但数字需要从1开始。例如：
 
 ```
-1\.  Bird
-3.  McHale
-2.  Parish
+1.  天
+3.  地
+2.  人
 
 ```
 
 效果：
 
-1.  Bird
-2.  McHale
-3.  Parish
+1.  天
+3.  地
+2.  人
 
 每一个列表项可以多行：
 
 ```
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+*  而这些并不是完全重要，更加重要的问题是，可是，即使是这样，标记语言的出现仍然代表了一定的意义。叔本华说过一句富有哲理的话，意志是一个强壮的盲人，倚靠在明眼的跛子肩上。这启发了我，要想清楚，标记语言，到底是一种怎么样的存在。
+*   伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我，本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。那么，标记语言因何而发生？了解清楚标记语言到底是一种怎么样的存在，是解决一切问题的关键。而这些并不是完全重要，更加重要的问题是，就我个人来说，标记语言对我的意义，不能不说非常重大。就我个人来说，标记语言对我的意义，不能不说非常重大。我们不得不面对一个非常尴尬的事实，那就是，总结的来说，标记语言因何而发生？
 
 ```
 
 效果：
 
--   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
--   Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.
+*  而这些并不是完全重要，更加重要的问题是，可是，即使是这样，标记语言的出现仍然代表了一定的意义。叔本华说过一句富有哲理的话，意志是一个强壮的盲人，倚靠在明眼的跛子肩上。这启发了我，要想清楚，标记语言，到底是一种怎么样的存在。
+*   伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我，本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。那么，标记语言因何而发生？了解清楚标记语言到底是一种怎么样的存在，是解决一切问题的关键。而这些并不是完全重要，更加重要的问题是，就我个人来说，标记语言对我的意义，不能不说非常重大。就我个人来说，标记语言对我的意义，不能不说非常重大。我们不得不面对一个非常尴尬的事实，那就是，总结的来说，标记语言因何而发生？
 
 ## 代码块
 
 每一行前面缩进四个或以上个空格，就认为是开始了一段代码块。代码块内原样输出。
 
 ```
-This is a normal paragraph:
+这是一个普通段落
 
-    This is a code block.
+    这是一个代码块
 
 ```
 
 效果：
 
-This is a normal paragraph:
+这是一个普通段落
 
-```
-This is a code block.
-
-```
+    这是一个代码块
 
 ## 横线
 
@@ -170,34 +163,16 @@ This is a code block.
 内嵌链接：
 
 ```
-I get 10 times more traffic from [Google](http://google.com/ "Google")
-than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
-[MSN](http://search.msn.com/ "MSN Search").
-
-```
-
-或参考文献式链接（缺省的链接标记认为与文本一致）：
-
-```
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        "Google"
-  [2]: http://search.yahoo.com/  "Yahoo Search"
-  [3]: http://search.msn.com/    "MSN Search"
-
-I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        "Google"
-  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
-  [msn]:    http://search.msn.com/    "MSN Search"
+[链接文字](链接地址 "链接描述") 
+例如 [Google](http://google.com/ "Google")，[Yahoo](http://search.yahoo.com/ "Yahoo Search")，[MSN](http://search.msn.com/ "MSN Search").
 
 ```
 
 效果：
 
-I get 10 times more traffic from [Google](http://google.com/ "Google") than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or [MSN](http://search.msn.com/ "MSN Search").
+[链接文字](链接地址 "链接描述") 
+例如 [Google](http://google.com/ "Google")，[Yahoo](http://search.yahoo.com/ "Yahoo Search")，[MSN](http://search.msn.com/ "MSN Search").
+
 
 如果直接以链接地址作为链接文本，可以用如下快捷写法：
 
@@ -206,55 +181,47 @@ I get 10 times more traffic from [Google](http://google.com/ "Google") than from
 
 ```
 
-[http://www.shengbin.me](http://www.shengbin.me/)
+<http://www.shengbin.me> 
 
 ## 强调
 
 单个`*`或`_`产生斜体，两个（`**`、`__`）则产生粗体。例如：
 
 ```
-*like* _this_
+*斜体* _斜体_
 
-**like** **this**
+**粗体** **粗体**
+
+***又粗又斜*** ___又粗又斜___
 
 ```
 
 效果：
 
-*like* *this*
+*斜体* _斜体_
 
-**like** **this**
+**粗体** **粗体**
+
+***又粗又斜*** ___又粗又斜___
 
 ## 内嵌代码
 
 ```
-code: `echo hello`
+内嵌代码 `天地玄黄`
 
 ```
 
 效果：
 
-code: `echo hello`
+内嵌代码 `天地玄黄`
 
 ## 图片
 
-图片与链接类似，只需在文本前面加上感叹号`!`即可。图片位置和大小无法通过Markdown来指定。
+语法和链接相似，只是前面多个“!”
+```
+![替代文字](图片url "图片说明")
+```
 
 ## 转义字符
 
-以下特殊字符需要用`\`转义得到。
-
-```
-\   backslash
-`   backtick
-*   asterisk
-_   underscore
-{}  curly braces
-[]  square brackets
-()  parentheses
-#   hash mark
-+   plus sign
--   minus sign (hyphen)
-.   dot
-!   exclamation mark
-```
+如果需要使用以上标记字符而不被Markdown理解为格式标记，需要用`\`转义：例如`\\`，效果为\\。
