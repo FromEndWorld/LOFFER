@@ -82,9 +82,6 @@ gitalk:
   repo: 
   owner: 
 
-# 输入Google Analytics web tracking code
-google_analytics:
-
 
 #
 # !! 以下所有设置都不需要更改 !!
