@@ -40,12 +40,15 @@ layout: default
           </script>
         </div>
 
-        <div class="entry">
-          {{ post.excerpt | truncate: 200 }}
+       <div class="post-excerpt">
+          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {%   else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}
+          <p>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+          </p>
         </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
+        
     {% endif %}
   {% endfor %}
   
@@ -77,12 +80,15 @@ layout: default
         </ul>
       </div>
 
-      <div class="entry">
-        {{ post.excerpt | truncate: 200 }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+      <div class="post-excerpt">
+          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
+          {%   else %}{{ post.content | lstrip | split: "
+" | first }}{% endif %}
+          <p>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+          </p>
+        </div>
+      
     {% endunless %}
   {% endfor %}
 </div>
