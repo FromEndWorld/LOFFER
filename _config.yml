@@ -64,11 +64,7 @@ footer-text: Copyright (c) 2019 来自火星
 disqus: loffer #shortname
 
 # 输入Gitalk相关设定，即可添加评论区
-gitalk:
-  clientID: 5c7512eed690173bfeda
-  clientSecret: 3c92dd855de73e22a0ffdabbdf78d38d2880e240
-  repo: nevercr.github.io
-  owner: nevercr
+
 
 # 输入Google Analytics web tracking code
 google_analytics:
