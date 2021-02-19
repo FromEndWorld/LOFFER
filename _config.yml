@@ -64,7 +64,11 @@ footer-text: Copyright (c) 2019 来自火星
 disqus: loffer #shortname
 
 # 输入Gitalk相关设定，即可添加评论区
-
+gitalk:
+  clientID: 
+  clientSecret: 
+  repo: 
+  owner: 
 
 # 输入Google Analytics web tracking code
 google_analytics:
