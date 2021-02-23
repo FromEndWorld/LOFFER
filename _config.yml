@@ -81,6 +81,7 @@ gitalk:
   clientSecret: 
   repo: 
   owner: 
+  proxy:
 
 # 输入Google Analytics web tracking code
 google_analytics:
