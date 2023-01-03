@@ -36,35 +36,58 @@ $small-font-size: 14px;
 $base-color: $oc-gray-8;
 $base-lighten-color: $oc-gray-6;
 $base-lightener-color: $oc-gray-4;
+$base-color-dark: $oc-gray-1;
+$base-lighten-color-dark: $oc-gray-2;
+$base-lightener-color-dark: $oc-gray-8;
+$page-background-color-dark:#303030;
 
 $background-color: $oc-gray-0;
 $background-lighten-color: hsla(210, 17%, 98%, 0.42);
+$background-color-dark: $oc-gray-9;
+$background-lighten-color-dark: hsl(0, 0%, 0%);
 
 $text-color: $base-color;
 $link-color: $oc-teal-8;
 $link-lighten-color: $oc-teal-6;
 $link-bghv-color: $oc-teal-0;
 $divider-color: $oc-gray-1;
+$text-color-dark: $base-color-dark;
+$link-color-dark: $oc-teal-3;
+$link-lighten-color-dark: $oc-teal-4;
+$divider-color-dark: $oc-gray-9;
+$link-bghv-color-dark: $oc-teal-9;
 
 $error-color:$oc-red-8;
+$error-color-dark:$oc-red-2;
 
 $table-border-color: $oc-gray-2;
 $table-background-color: $oc-gray-1;
+$table-border-color-dark: $oc-gray-8;
+$table-background-color-dark: $oc-gray-9;
 
 $blockquote-color: $base-lighten-color;
 $blockquote-border-color: $oc-gray-3;
+$blockquote-color-dark: $base-lighten-color-dark;
+$blockquote-border-color-dark: $oc-gray-7;
 
 $footnote-link-border-color: $oc-gray-1;
 $footnote-link-background-over-color: $oc-gray-1;
+$footnote-link-border-color-dark: $oc-gray-9;
+$footnote-link-background-over-color-dark: $oc-gray-9;
 
 // $selection-color: $oc-black;
 $selection-background-color: $oc-gray-3;
+$selection-background-color-dark: $oc-gray-7;
 
 $tag-index-label-background-color: $oc-gray-2;
 $tag-index-count-background-color: hsla(210, 7%, 56%, 0.102);
+$tag-index-label-background-color-dark: $oc-gray-7;
+$tag-index-count-background-color-dark: hsla(210, 7%, 56%, 0.89);
 
 $footer-border-color: $oc-gray-2;
 $footer-background-color: $oc-gray-0;
+$footer-border-color-dark: $oc-gray-7;
+$footer-background-color-dark: $oc-gray-9;
 
 // List
 $li-bottom-space: 0.4em;

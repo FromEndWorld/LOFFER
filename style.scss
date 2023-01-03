@@ -24,7 +24,14 @@ body {
   color: $base-color;
   line-height: 1.7em;
 }
+.dark-mode{
 
+  font-family: $base-font;
+  color: $base-color-dark;
+  line-height: 1.7em;
+  background-color: $page-background-color-dark;
+
+}
 .container {
   margin: 0 auto;
   max-width: 1000px;
@@ -61,34 +68,63 @@ h3 {
   font-size: 20px;
 }
 
-h4 {
-  font-size: 20px;
-  color: $base-lighten-color;
-}
+  h4 {
+    font-size: 20px;
+    color: $base-lighten-color;
+  }
 
-h6 {
-  color: $base-lighten-color;
-}
+  h6 {
+    color: $base-lighten-color;
+  }
+  p {
+    color: $text-color;
+    margin: 1em 0;
+  }
+  a {
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  
+    &:hover, &:active {
+      color: $link-lighten-color;
+    }
+  }
+.dark-mode{
+  h4 {
+    font-size: 20px;
+    color: $base-lighten-color-dark;
+  }
 
-p {
-  color: $text-color;
-  margin: 1em 0;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-
-  &:hover, &:active {
-    color: $link-lighten-color;
+  h6 {
+    color: $base-lighten-color-dark;
+  }
+  p {
+    color: $text-color-dark;
+    margin: 1em 0;
+  }
+  a {
+    color: $link-color-dark;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  
+    &:hover, &:active {
+      color: $link-lighten-color-dark;
+    }
   }
 }
+
+
+
 
 em, i {
   font-style: italic;
@@ -108,12 +144,18 @@ sup {
   font-size: smaller;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid $divider-color;
-  margin: 1.5em auto;
+  hr {
+    border: 0;
+    border-top: 1px solid $divider-color;
+    margin: 1.5em auto;
+  }
+.dark-mode{
+  hr {
+    border: 0;
+    border-top: 1px solid $divider-color-dark;
+    margin: 1.5em auto;
+  }
 }
-
 // Yeun's list style
 // https://gist.github.com/yeun/d824fc7b04b756508f4b0143535cec30
 
@@ -201,73 +243,146 @@ dd {
   }
 }
 
-// Table
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid $table-border-color;
-  border-collapse: collapse;
-}
-
-td, th {
-  padding: .25rem .5rem;
-  border: 1px solid $table-border-color;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: $table-background-color;
-}
-
-// Blockquote
-blockquote {
-  font-weight: 300;
-  padding: 0 0 0 1.4rem;
-  margin: 0 2rem 1rem 0;
-  border-left: .2em solid $blockquote-border-color;
-
-  p {
-    color: $blockquote-color;
+  // Table
+  table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid $table-border-color;
+    border-collapse: collapse;
   }
 
-  p:last-child {
-    margin-bottom: 0;
+  td, th {
+    padding: .25rem .5rem;
+    border: 1px solid $table-border-color;
   }
-}
 
-// Footnote
-a.footnote {
-  &,
-  .post p &,
-  .post ol &,
-  .post ul & {
-    margin: 0 3px;
-    padding: 0 2px;
-    font-size: $small-font-size;
-    text-align: center;
-    border: 1px solid $footnote-link-border-color;
-    border-radius: 2px;
-    -webkit-text-stroke: 0.25px;
-    -webkit-transition: 0.2s ease-out all;
-    text-decoration: none;
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: $table-background-color;
+  }
 
-    &:hover {
-      background: $footnote-link-background-over-color;
+  // Blockquote
+  blockquote {
+    font-weight: 300;
+    padding: 0 0 0 1.4rem;
+    margin: 0 2rem 1rem 0;
+    border-left: .2em solid $blockquote-border-color;
+
+    p {
+      color: $blockquote-color;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
+
+  // Footnote
+  a.footnote {
+    &,
+    .post p &,
+    .post ol &,
+    .post ul & {
+      margin: 0 3px;
+      padding: 0 2px;
+      font-size: $small-font-size;
+      text-align: center;
+      border: 1px solid $footnote-link-border-color;
+      border-radius: 2px;
+      -webkit-text-stroke: 0.25px;
+      -webkit-transition: 0.2s ease-out all;
+      text-decoration: none;
+
+      &:hover {
+        background: $footnote-link-background-over-color;
+      }
+    }
+  }
+
+  .footnotes {
+    border-top: 1px solid $divider-color;
+    font-size: $small-font-size;
+  }
+.dark-mode{
+  // Table
+  table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid $table-border-color-dark;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: .25rem .5rem;
+    border: 1px solid $table-border-color-dark;
+  }
+
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: $table-background-color-dark;
+  }
+
+  // Blockquote
+  blockquote {
+    font-weight: 300;
+    padding: 0 0 0 1.4rem;
+    margin: 0 2rem 1rem 0;
+    border-left: .2em solid $blockquote-border-color-dark;
+
+    p {
+      color: $blockquote-color-dark;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Footnote
+  a.footnote {
+    &,
+    .post p &,
+    .post ol &,
+    .post ul & {
+      margin: 0 3px;
+      padding: 0 2px;
+      font-size: $small-font-size;
+      text-align: center;
+      border: 1px solid $footnote-link-border-color-dark;
+      border-radius: 2px;
+      -webkit-text-stroke: 0.25px;
+      -webkit-transition: 0.2s ease-out all;
+      text-decoration: none;
+
+      &:hover {
+        background: $footnote-link-background-over-color-dark;
+      }
+    }
+  }
+
+  .footnotes {
+    border-top: 1px solid $divider-color-dark;
+    font-size: $small-font-size;
+  }
 }
 
-.footnotes {
-  border-top: 1px solid $divider-color;
-  font-size: $small-font-size;
-}
 
-// Image
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1em;
-  border-radius: 5px;
+  // Image
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1em;
+    border-radius: 5px;
+  }
+.dark-mode{
+  // Image
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1em;
+    border-radius: 5px;
+    filter: brightness(.8);
+  }
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -275,14 +390,26 @@ img {
   max-width: none;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-//  color: $selection-color;
-  background: $selection-background-color;
-}
-::selection {
-//  color: $selection-color;
-  background: $selection-background-color;
+
+  // Specify the color of the selection
+  ::-moz-selection {
+  //  color: $selection-color;
+    background: $selection-background-color;
+  }
+  ::selection {
+  //  color: $selection-color;
+    background: $selection-background-color;
+  }
+.dark-mode{
+  // Specify the color of the selection
+  ::-moz-selection {
+  //  color: $selection-color;
+    background: $selection-background-color-dark;
+  }
+  ::selection {
+  //  color: $selection-color;
+    background: $selection-background-color-dark;
+  }
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -319,25 +446,51 @@ img {
 // .sidebar
 //
 
-.wrapper-sidebar {
-  width: 30%;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-color: $background-color;
-	height: 100%;
-	top: 0;
-	left:0;
-	position: fixed;
-	z-index: 4;
-  border-right: 1px solid $divider-color;
 
-  @include mobile {
-    width: 100%;
-    height: auto;
-    padding-bottom: 24px;
-    position: relative;
-    border-bottom: 1px solid $divider-color;
-    border-right: 0;
+  .wrapper-sidebar {
+    width: 30%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: $background-color;
+    height: 100%;
+    top: 0;
+    left:0;
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid $divider-color;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+      padding-bottom: 24px;
+      position: relative;
+      border-bottom: 1px solid $divider-color;
+      border-right: 0;
+    }
+  }
+
+
+.dark-mode{
+  .wrapper-sidebar {
+    width: 30%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: $background-color-dark;
+    height: 100%;
+    top: 0;
+    left:0;
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid $divider-color-dark;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+      padding-bottom: 24px;
+      position: relative;
+      border-bottom: 1px solid $divider-color-dark;
+      border-right: 0;
+    }
   }
 }
 
@@ -377,23 +530,46 @@ img {
   }
 }
 
-.site-name {
-  margin: 0 auto;
-  color: $base-color;
-  cursor: pointer;
-  font-family: $base-font;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
 
-.site-description {
-  margin: 15px auto;
-  color: $base-lighten-color;
-  font-size: 16px;
 
-  @include mobile {
-    margin: 10px auto;
+  .site-name {
+    margin: 0 auto;
+    color: $base-color;
+    cursor: pointer;
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .site-description {
+    margin: 15px auto;
+    color: $base-lighten-color;
+    font-size: 16px;
+
+    @include mobile {
+      margin: 10px auto;
+    }
+  }
+.dark-mode{
+  .site-name {
+    margin: 0 auto;
+    color: $base-color-dark;
+    cursor: pointer;
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .site-description {
+    margin: 15px auto;
+    color: $base-lighten-color-dark;
+    font-size: 16px;
+
+    @include mobile {
+      margin: 10px auto;
+    }
   }
 }
 
@@ -454,26 +630,50 @@ nav {
     li {
       display: inline;
       margin: 0;
+      
+        > a {
+          margin: 3px 3px 3px 0;
+          padding: .5px 4px;
+          color: $base-color;
+          background-color: $tag-index-label-background-color;
+          border-radius: 3px;
 
-      > a {
-        margin: 3px 3px 3px 0;
-        padding: .5px 4px;
-        color: $base-color;
-        background-color: $tag-index-label-background-color;
-        border-radius: 3px;
+          &:hover {
+            color: $link-color;
+            background-color:$link-bghv-color;
+          }
+        }
+      }
+      .dark-mode{
+        > a {
+          margin: 3px 3px 3px 0;
+          padding: .5px 4px;
+          color: $base-color-dark;
+          background-color: $tag-index-label-background-color-dark;
+          border-radius: 3px;
 
-        &:hover {
-          color: $link-color;
-          background-color:$link-bghv-color;
+          &:hover {
+            color: $link-color-dark;
+            background-color:$link-bghv-color-dark;
+          }
         }
       }
     }
   }
-}
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $divider-color;
+
+
+
+  .posts > .post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $divider-color;
+  }
+.dark-mode{
+
+  .posts > .post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $divider-color-dark;
+  }
 }
 
 .posts > .post:last-child {
@@ -482,27 +682,49 @@ nav {
 }
 
 
-.pinned .feather-anchor {
-  color: $base-lighten-color;
-  padding: 2px;
-  margin-right: 8px;
+
+  .pinned .feather-anchor {
+    color: $base-lighten-color;
+    padding: 2px;
+    margin-right: 8px;
+  }
+
+
+  .date {
+    font-weight: 300;
+    font-size: $small-font-size;
+    color: $base-lighten-color;
+    margin-right: 4px;
+  }
+
+  .author{
+    font-weight:700;
+    font-size:$small-font-size;
+    color: $base-lighten-color;
+    margin-right: 4px;
+  }
+.dark-mode{
+  .pinned .feather-anchor {
+    color: $base-lighten-color-dark;
+    padding: 2px;
+    margin-right: 8px;
+  }
+
+
+  .date {
+    font-weight: 300;
+    font-size: $small-font-size;
+    color: $base-lighten-color-dark;
+    margin-right: 4px;
+  }
+
+  .author{
+    font-weight:700;
+    font-size:$small-font-size;
+    color: $base-lighten-color-dark;
+    margin-right: 4px;
+  }
 }
-
-
-.date {
-  font-weight: 300;
-  font-size: $small-font-size;
-  color: $base-lighten-color;
-  margin-right: 4px;
-}
-
-.author{
-  font-weight:700;
-  font-size:$small-font-size;
-  color: $base-lighten-color;
-  margin-right: 4px;
-}
-
 
 .post {
 
@@ -564,195 +786,507 @@ nav {
   }
 }
 
-// pagination
 
-.pagination {
-  border-top: 1px solid $divider-color;
-  font-weight: 300;
-  padding: 40px 0;
-  width: 100%;
-  display: inline-block;
 
-  @include mobile {
-    font-size: $small-font-size;
-    padding: 24px 0;
-  }
 
-  > .prev {
-    float: left;
-    width: 50%;
-    a {
-      color: $base-lighten-color;
-      border: 1px solid $divider-color;
-      padding: 10px 20px;
-      background: $background-color;
+  // pagination
+  .pagination {
+    border-top: 1px solid $divider-color;
+    font-weight: 300;
+    padding: 40px 0;
+    width: 100%;
+    display: inline-block;
 
-      &:hover, &:focus {
-        color: $link-lighten-color;
-        border: 1px solid $link-lighten-color;
-        background-color: $link-bghv-color;
+    @include mobile {
+      font-size: $small-font-size;
+      padding: 24px 0;
+    }
+
+    > .prev {
+      float: left;
+      width: 50%;
+      a {
+        color: $base-lighten-color;
+        border: 1px solid $divider-color;
+        padding: 10px 20px;
+        background: $background-color;
+
+        &:hover, &:focus {
+          color: $link-lighten-color;
+          border: 1px solid $link-lighten-color;
+          background-color: $link-bghv-color;
+        }
       }
     }
-  }
 
-  > .next {
-    float: right;
-    text-align: right;
-    width: 50%;
-    a {
-      color: $base-lighten-color;
-      border: 1px solid $divider-color;
-      padding: 10px 20px;
-      background: $background-color;
+    > .next {
+      float: right;
+      text-align: right;
+      width: 50%;
+      a {
+        color: $base-lighten-color;
+        border: 1px solid $divider-color;
+        padding: 10px 20px;
+        background: $background-color;
 
-      &:hover, &:focus {
-        color: $link-lighten-color;
-        border: 1px solid $link-lighten-color;
-        background-color: $link-bghv-color;
-      }
-    }
-  }
-}
-
-// Archive
-.archive {
-  a {
-    color: $base-color;
-  }
-  time {
-    color: $base-lighten-color;
-    font-size: $small-font-size;
-    font-weight: 300;
-    margin-left: 3px;
-  }
-}
-
-// Tags
-.tags > .label {
-  > li:before {
-    content: "";
-  }
-
-  > li {
-    margin: 0;
-    font-size: $small-font-size;
-    font-weight: 300;
-    display: inline;
-
-    > a {
-      display: inline-block;
-      margin: 1px;
-      color: $base-color;
-      background-color: $tag-index-label-background-color;
-      border-radius: 3px;
-
-      &:hover {
-        background-color: $link-bghv-color;
-      }
-
-      span {
-        float: left;
-        padding: .5px 5px;
-
-        &.count {
-          background-color: $tag-index-count-background-color;
-          border-radius: 0 3px 3px 0;
-
+        &:hover, &:focus {
+          color: $link-lighten-color;
+          border: 1px solid $link-lighten-color;
+          background-color: $link-bghv-color;
         }
       }
     }
   }
-}
 
-.tags > .tag {
-  a {
-    color: $base-color;
-  }
-  time {
-    color: $base-lighten-color;
-    font-size: $small-font-size;
-    font-weight: 300;
-    margin-left: 3px;
-  }
-}
-
-
-
-// Footer
-.wrapper-footer-desktop {
-  margin-top: 50px;
-  border-top: 1px solid $footer-border-color;
-  background-color: $footer-background-color;
-  position: absolute;
-  clear:both;
-  width:100%;
-  bottom:0;
-  
-  @include mobile {
-    display: none;
+  // Archive
+  .archive {
+    a {
+      color: $base-color;
+    }
+    time {
+      color: $base-lighten-color;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
   }
 
-}
-
-.wrapper-footer-mobile {
-  display: none;
-  
-  @include mobile {
-    display: block;
-    width: 100%;
-    border-top: 1px solid $footer-border-color;
-    background-color: $footer-background-color;
-  }
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-
-  p {
-    font-size: $small-font-size;
-    color: $base-lighten-color;
-  }
-
-  .svg-icon {
-    display: block;
-    font-size: 0;
-    list-style: none;
-    margin: 0;
-    text-align: center;
-
-    li {
-      display: inline-block;
-      margin: 10px;
+  // Tags
+  .tags > .label {
+    > li:before {
+      content: "";
     }
 
-    svg {
-      height: 20px;
-      width: 20px;
-      fill: $base-lighten-color;
-      
-      &:hover {
-        fill: $link-lighten-color;
+    > li {
+      margin: 0;
+      font-size: $small-font-size;
+      font-weight: 300;
+      display: inline;
+
+      > a {
+        display: inline-block;
+        margin: 1px;
+        color: $base-color;
+        background-color: $tag-index-label-background-color;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $link-bghv-color;
+        }
+
+        span {
+          float: left;
+          padding: .5px 5px;
+
+          &.count {
+            background-color: $tag-index-count-background-color;
+            border-radius: 0 3px 3px 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  .tags > .tag {
+    a {
+      color: $base-color;
+    }
+    time {
+      color: $base-lighten-color;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
+  }
+.dark-mode{
+  // pagination
+  .pagination {
+    border-top: 1px solid $divider-color-dark;
+    font-weight: 300;
+    padding: 40px 0;
+    width: 100%;
+    display: inline-block;
+
+    @include mobile {
+      font-size: $small-font-size;
+      padding: 24px 0;
+    }
+
+    > .prev {
+      float: left;
+      width: 50%;
+      a {
+        color: $base-lighten-color-dark;
+        border: 1px solid $divider-color-dark;
+        padding: 10px 20px;
+        background: $background-color-dark;
+
+        &:hover, &:focus {
+          color: $link-lighten-color-dark;
+          border: 1px solid $link-lighten-color-dark;
+          background-color: $link-bghv-color-dark;
+        }
       }
     }
 
-    em {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-top: -.75em;
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    > .next {
+      float: right;
+      text-align: right;
+      width: 50%;
+      a {
+        color: $base-lighten-color-dark;
+        border: 1px solid $divider-color-dark;
+        padding: 10px 20px;
+        background: $background-color-dark;
+
+        &:hover, &:focus {
+          color: $link-lighten-color-dark;
+          border: 1px solid $link-lighten-color-dark;
+          background-color: $link-bghv-color-dark;
+        }
+      }
+    }
+  }
+
+  // Archive
+  .archive {
+    a {
+      color: $base-color-dark;
+    }
+    time {
+      color: $base-lighten-color-dark;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
+    }
+  }
+
+  // Tags
+  .tags > .label {
+    > li:before {
+      content: "";
+    }
+
+    > li {
+      margin: 0;
+      font-size: $small-font-size;
+      font-weight: 300;
+      display: inline;
+
+      > a {
+        display: inline-block;
+        margin: 1px;
+        color: $base-color-dark;
+        background-color: $tag-index-label-background-color-dark;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $link-bghv-color-dark;
+        }
+
+        span {
+          float: left;
+          padding: .5px 5px;
+
+          &.count {
+            background-color: $tag-index-count-background-color-dark;
+            border-radius: 0 3px 3px 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  .tags > .tag {
+    a {
+      color: $base-color-dark;
+    }
+    time {
+      color: $base-lighten-color-dark;
+      font-size: $small-font-size;
+      font-weight: 300;
+      margin-left: 3px;
     }
   }
 }
+
+
+
+
+  // Footer
+  .wrapper-footer-desktop {
+    margin-top: 50px;
+    border-top: 1px solid $footer-border-color;
+    background-color: $footer-background-color;
+    position: absolute;
+    clear:both;
+    width:100%;
+    bottom:0;
+    
+    @include mobile {
+      display: none;
+    }
+
+  }
+
+  .wrapper-footer-mobile {
+    display: none;
+    
+    @include mobile {
+      display: block;
+      width: 100%;
+      border-top: 1px solid $footer-border-color;
+      background-color: $footer-background-color;
+    }
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+
+    p {
+      font-size: $small-font-size;
+      color: $base-lighten-color;
+    }
+
+    .svg-icon {
+      display: block;
+      font-size: 0;
+      list-style: none;
+      margin: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      svg {
+        height: 20px;
+        width: 20px;
+        fill: $base-lighten-color;
+        
+        &:hover {
+          fill: $link-lighten-color;
+        }
+      }
+
+      em {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: -.75em;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+.dark-mode{
+  // Footer
+  .wrapper-footer-desktop {
+    margin-top: 50px;
+    border-top: 1px solid $footer-border-color-dark;
+    background-color: $footer-background-color-dark;
+    position: absolute;
+    clear:both;
+    width:100%;
+    bottom:0;
+    
+    @include mobile {
+      display: none;
+    }
+
+  }
+
+  .wrapper-footer-mobile {
+    display: none;
+    
+    @include mobile {
+      display: block;
+      width: 100%;
+      border-top: 1px solid $footer-border-color-dark;
+      background-color: $footer-background-color-dark;
+    }
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+
+    p {
+      font-size: $small-font-size;
+      color: $base-lighten-color-dark;
+    }
+
+    .svg-icon {
+      display: block;
+      font-size: 0;
+      list-style: none;
+      margin: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      svg {
+        height: 20px;
+        width: 20px;
+        fill: $base-lighten-color-dark;
+        
+        &:hover {
+          fill: $link-lighten-color-dark;
+        }
+      }
+
+      em {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: -.75em;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+.dark-mode{
+  .aplayer-info{
+      background-color: $background-color-dark;
+      color: $text-color-dark;
+  }
+  .aplayer .aplayer-lrc:before{
+    height:0 !important;
+  }
+  .aplayer .aplayer-lrc:after{
+    height:0 !important;
+  }
+  .aplayer .aplayer-list ol li.aplayer-list-light{background:#212529 !important;}
+  .aplayer .aplayer-list ol li:hover{background:#212529 !important;}
+  .aplayer{background:#212529 !important;}
+
+}
+
+// Back to Top button 
+.btn-top {
+  display: none; /* hide the button at the beginning */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 80px; /* Place the button at the bottom of the page */ 
+  right: 30px; /* Place the button 30px from the right */ 
+  z-index: 233; /* Make sure it does not overlap */ 
+  border-width: 2px;
+  border-style: solid;
+  border-color: $link-color;
+  background-color: $link-color;
+  color: $white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; /* make it round */
+  text-align: center;
+  &:visited {
+    color: $white;
+    border-color: $link-color;
+  }
+  &:hover {
+    background-color: $white;
+    color: $link-color;
+    border-color: $link-color;
+  }  
+
+}
+.dark-mode{
+  .btn-top {
+    border-color: $link-color-dark;
+    background-color: $link-color-dark;
+    color: $black;
+
+    &:visited {
+      color: $black;
+      border-color: $link-color-dark;
+    }
+    &:hover {
+      background-color: $black;
+      color: $link-color-dark;
+      border-color: $link-color-dark;
+    }
+  
+  }
+}
+.btn-dark {
+  position: fixed; /* 固定按钮位置 */
+  bottom: 20px; /* 将按钮置于页面底部 */
+  right: 30px; /* 将按钮置于页面右侧 */
+  z-index: 99; /* 让按钮显示在其他内容的上面 */
+  border-width: 2px;
+  border-style: solid;
+  border-color: $link-color;
+  background-color: $link-color;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; /* make it round */
+  
+  
+  &:visited {
+    border-color: $link-color;
+  }
+  &:hover {
+    background-color: $white;
+    border-color: $link-color;
+  } 
+#dark-mode-button img {
+  width: 100%; 
+  height: 100%; 
+  filter: invert(100%); /* 反转图片的颜色 */
+}
+  
+}
+.dark-mode{
+  .btn-dark {
+    border-color: $link-color-dark;
+    background-color: $link-color-dark;
+    color: $black;
+    &:visited {
+      color: $black;
+      border-color: $link-color-dark;
+    }
+    &:hover {
+      background-color: $black;
+      color: $link-color-dark;
+      border-color: $link-color-dark;
+    } 
+  }
+  #dark-mode-button img {
+    filter: none
+  }
+}
+
+/* 隐藏月亮图标 */
+#moon-icon {
+  display: none;
+}
+
+body.dark-mode #moon-icon {
+  display: inline-block;
+}
+body.dark-mode #sun-icon {
+  display: none;
+}
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "gitalk";
+// @import "dark-Aplayer";
 
 
