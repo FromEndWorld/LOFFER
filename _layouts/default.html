@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="dark-mode">
+  <body>
+    <script>
+      detectDarkMode();
+    </script>
     {% include nav.html %}
 
     {% if page.toc==true %}
