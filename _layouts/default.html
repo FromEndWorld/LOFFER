@@ -2,6 +2,9 @@
 <html>
   {% include head.html %}
   <body>
+    <script>
+      detectDarkMode();
+    </script>
     {% include nav.html %}
 
     {% if page.toc==true %}
@@ -17,6 +20,14 @@
     </div>
 
     {% include analytics.html %}
+  <!-- dark mode button -->
+  <button id="dark-mode-button" class="btn-dark" onclick="darkMode()">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/sun.ico" alt="亮色模式按钮" id="sun-icon">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/moon.ico" alt="暗色模式按钮" id="moon-icon">
+  </button>
+  <!-- back to top button --> 
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/back-to-top.js"></script>
+  <button id="btn-top" class="btn-top" title= "Go to top">&#11165</button>
   </body>
 
   {% if page.toc==true %}
@@ -28,6 +39,8 @@
   <div class="wrapper-footer-mobile">
     <footer class="footer">
       {% include footer.html %}
+      <!-- toko -->
+      <p id="hitokoto2">:D 获取中...</p>
     </footer>
 
 

@@ -16,6 +16,17 @@
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!--Link modify-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        //为超链接加上target='_blank'属性
+      // $('a[href^="http"]').each(function() {
+      $('a[title^="out"]').each(function() {
+        $(this).attr('target', '_blank');
+      });
+    });
+  </script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -25,6 +36,56 @@
     });
   </script>
 
+<!--APlayerStart-->
+  <style>
+    li {margin: 0em 0;}
+    button {min-height: 0px;}
+    .aplayer {margin: 0 0 1.75em 0 !important;}
+  </style>
+  <!-- require APlayer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+  <!--APlayerOver-->
+  <!-- require MetingJS -->
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  <!-- toko -->
+  <script>
+    fetch('https://v1.hitokoto.cn')
+      .then(response => response.json())
+      .then(data => {
+        const hitokoto = document.getElementById('hitokoto')
+        const hitokoto2 = document.getElementById('hitokoto2')
+        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        hitokoto.innerText = data.hitokoto
+        hitokoto2.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        hitokoto2.innerText = data.hitokoto
+      })
+      .catch(console.error)
 
+  </script>
+
+  <script>
+    function darkMode() {
+  
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  
+    function detectDarkMode() {
+      // 如果系统的暗色模式已经关闭
+      if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        var body = document.body;
+        body.classList.remove("dark-mode");
+      } else {
+        var body = document.body;
+        body.classList.add("dark-mode");
+
+      }
+    }
+  
+    // window.addEventListener('load', detectDarkMode);
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', detectDarkMode);
+    
+  </script>
 </head>
