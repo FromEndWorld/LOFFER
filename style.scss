@@ -750,6 +750,35 @@ footer {
   }
 }
 
+
+// Back to Top button 
+.btn-top {
+    display: none; /* hide the button at the beginning */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */ 
+    right: 30px; /* Place the button 30px from the right */ 
+    z-index: 233; /* Make sure it does not overlap */ 
+    border-width: 2px;
+    border-style: solid;
+    border-color: $link-color;
+    background-color: $link-color;
+    color: $white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* make it round */
+    text-align: center;
+    &:visited {
+      color: $white;
+      border-color: $link-color;
+    }
+    &:hover {
+      background-color: $white;
+      color: $link-color;
+      border-color: $link-color;
+    }  
+    
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
